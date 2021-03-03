@@ -488,7 +488,9 @@
                     newWindow.focus();
                 }
             } else {
-                window.location.href = sharer.shareUrl;
+                //window.location.href = sharer.shareUrl;
+                console.log("This is being fired... ");
+                window.open(sharer.shareUrl, '_parent')
             }
         }
     };
